@@ -63,6 +63,19 @@ hl.codeToHtml(code, { lang: "ts", theme: "Linear Dark" });
 
 The same JSON drops into VS Code, Astro / Starlight, VitePress, and Monaco.
 
+## Terminal syntax (bat & delta)
+
+`textmate/linear-light.tmTheme` and `textmate/linear-dark.tmTheme` give real Linear syntax highlighting inside any terminal, via `bat` (and `delta`, which uses bat's themes for `git diff`):
+
+```sh
+mkdir -p "$(bat --config-dir)/themes"
+cp textmate/linear-*.tmTheme "$(bat --config-dir)/themes/"
+bat cache --build
+bat --theme="Linear Dark" file.ts
+```
+
+For `delta`, set `syntax-theme = Linear Dark` under `[delta]` in `~/.gitconfig`. The `.tmTheme` files also work in Sublime Text and TextMate.
+
 ## Palette
 
 ### Linear Dark
