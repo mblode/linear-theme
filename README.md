@@ -4,7 +4,9 @@ Light and dark themes for Ghostty, cmux, Zed, and Alacritty, built from Linear's
 
 ## Preview
 
-![Linear theme, dark and light](assets/preview.png)
+![Linear Dark](assets/preview-dark.png)
+
+![Linear Light](assets/preview-light.png)
 
 ## Install
 
