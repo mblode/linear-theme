@@ -97,4 +97,4 @@ The same scheme also works in Kitty, WezTerm, iTerm2, and Warp.
 
 ## License
 
-MIT. Colours come from Linear's public stylesheet. Linear is a trademark of Linear Orbit, Inc. and this isn't affiliated with it.
+MIT
