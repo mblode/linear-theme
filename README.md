@@ -58,7 +58,7 @@ Covers the UI, syntax, and the built-in terminal.
 
 ```js
 import { createHighlighter } from "shiki";
-import linearDark from "linear-theme/shiki/linear-dark.json" with { type: "json" };
+import linearDark from "./shiki/linear-dark.json" with { type: "json" };
 
 const hl = await createHighlighter({ themes: [linearDark], langs: ["ts"] });
 hl.codeToHtml(code, { lang: "ts", theme: "Linear Dark" });
