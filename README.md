@@ -49,6 +49,20 @@ import = ["~/.config/alacritty/themes/linear-dark.toml"]
 
 The same scheme also works in Kitty, WezTerm, iTerm2, and Warp.
 
+## diffs.com & Shiki
+
+`shiki/linear-light.json` and `shiki/linear-dark.json` are [Shiki](https://shiki.style) / VS Code themes, generated from Linear's own TextMate scope map. [diffs.com](https://diffs.com) (`@pierre/diffs`) is built on Shiki, so load them there, or use them anywhere Shiki runs:
+
+```js
+import { createHighlighter } from "shiki";
+import linearDark from "linear-theme/shiki/linear-dark.json" with { type: "json" };
+
+const hl = await createHighlighter({ themes: [linearDark], langs: ["ts"] });
+hl.codeToHtml(code, { lang: "ts", theme: "Linear Dark" });
+```
+
+The same JSON drops into VS Code, Astro / Starlight, VitePress, and Monaco.
+
 ## Palette
 
 ### Linear Dark
