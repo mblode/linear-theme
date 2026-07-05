@@ -2,8 +2,6 @@
 
 Light and dark themes for Ghostty, cmux, Zed, and Alacritty, built from Linear's own colours.
 
-The colours are converted straight from Linear's `lch()` design tokens (Lab D50 → Bradford D65 → sRGB), so they match the app instead of being eyeballed.
-
 ## Preview
 
 **Linear Dark**
