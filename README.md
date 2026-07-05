@@ -16,47 +16,45 @@ cd linear-theme
 ./install.sh
 ```
 
-Sets up all four apps. For just one: `./install.sh ghostty`, `./install.sh zed`, or `./install.sh alacritty`.
+Sets up all four apps. For one: `./install.sh ghostty|zed|alacritty`.
 
 ## Ghostty & cmux
 
-Both read the same files. Add this to `~/.config/ghostty/config`:
+Both read the same files. In `~/.config/ghostty/config`:
 
 ```
 theme = light:linear-light,dark:linear-dark
 ```
 
-That follows your system light/dark. For a fixed mode use `theme = linear-dark` or `theme = linear-light`. Reload with `cmd-shift-,`.
-
-cmux note: its Settings → Appearance picker writes its own `theme =` line that overrides this. Leave it on System and set the theme in the Ghostty config.
+Follows system light/dark; or pin `theme = linear-dark`. Reload with `cmd-shift-,`. In cmux, leave the Appearance picker on System (it writes a `theme =` line that overrides this) and set the theme here.
 
 ## Zed
 
-Select Linear with `cmd-k cmd-t`, or in `settings.json`:
+`cmd-k cmd-t`, or in `settings.json`:
 
 ```json
 "theme": { "mode": "system", "light": "Linear Light", "dark": "Linear Dark" }
 ```
 
-Covers the UI, syntax, and the built-in terminal.
+Covers UI, syntax, and the built-in terminal.
 
 ## Other terminals
 
-`terminals/` has the same 16-colour palette in each terminal's native format:
+`terminals/` has the same palette in each native format:
 
 | Terminal | File | Load with |
 | --- | --- | --- |
 | Alacritty | `alacritty-{light,dark}.toml` | `[general] import = ["…/alacritty-dark.toml"]` |
 | Kitty | `kitty-{light,dark}.conf` | `include kitty-dark.conf` |
-| WezTerm | `wezterm-{light,dark}.lua` | `require` it into `color_schemes` |
-| iTerm2 | `iterm2-{light,dark}.itermcolors` | double-click to import, then pick in Settings → Profiles → Colors |
+| WezTerm | `wezterm-{light,dark}.lua` | `require` into `color_schemes` |
+| iTerm2 | `iterm2-{light,dark}.itermcolors` | double-click, then Settings → Profiles → Colors |
 | Warp | `warp-{light,dark}.yaml` | drop into `~/.warp/themes/` |
 
 `./install.sh alacritty` installs the Alacritty files; the rest are copy-in.
 
 ## diffs.com & Shiki
 
-`shiki/linear-light.json` and `shiki/linear-dark.json` are [Shiki](https://shiki.style) / VS Code themes, generated from Linear's own TextMate scope map. [diffs.com](https://diffs.com) (`@pierre/diffs`) is built on Shiki, so load them there, or use them anywhere Shiki runs:
+`shiki/linear-{light,dark}.json` are [Shiki](https://shiki.style) / VS Code themes from Linear's scope map. [diffs.com](https://diffs.com) runs on Shiki, so they load there, plus VS Code, Astro, VitePress, and Monaco:
 
 ```js
 import { createHighlighter } from "shiki";
@@ -66,11 +64,9 @@ const hl = await createHighlighter({ themes: [linearDark], langs: ["ts"] });
 hl.codeToHtml(code, { lang: "ts", theme: "Linear Dark" });
 ```
 
-The same JSON drops into VS Code, Astro / Starlight, VitePress, and Monaco.
-
 ## Terminal syntax (bat & delta)
 
-`textmate/linear-light.tmTheme` and `textmate/linear-dark.tmTheme` give real Linear syntax highlighting inside any terminal, via `bat` (and `delta`, which uses bat's themes for `git diff`):
+`textmate/linear-{light,dark}.tmTheme` bring Linear syntax to `bat` and `delta` (git diffs) in any terminal:
 
 ```sh
 mkdir -p "$(bat --config-dir)/themes"
@@ -79,7 +75,7 @@ bat cache --build
 bat --theme="Linear Dark" file.ts
 ```
 
-For `delta`, set `syntax-theme = Linear Dark` under `[delta]` in `~/.gitconfig`. The `.tmTheme` files also work in Sublime Text and TextMate.
+For `delta`, set `syntax-theme = Linear Dark` under `[delta]` in `~/.gitconfig`. Also works in Sublime Text and TextMate.
 
 ## Palette
 
