@@ -97,10 +97,6 @@ The same scheme also works in Kitty, WezTerm, iTerm2, and Warp.
 | Accent / cursor | `#6d78d5` | `109 120 213` | `234 55% 63%` | ![](https://placehold.co/18/6d78d5/6d78d5.png) |
 | Selection | `#edeef8` | `237 238 248` | `235 44% 95%` | ![](https://placehold.co/18/edeef8/edeef8.png) |
 
-## Notes
-
-Linear uses pink for plain keywords and purple for control flow. Zed only has one keyword scope, so pink wins there. Variables stay the foreground colour and orange is kept for properties, which is what keeps it looking calm.
-
 ## License
 
 MIT. Colours come from Linear's public stylesheet. Linear is a trademark of Linear Orbit, Inc. and this isn't affiliated with it.
