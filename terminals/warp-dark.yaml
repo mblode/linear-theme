@@ -1,0 +1,24 @@
+name: Linear Dark
+accent: '#7e7fff'
+background: '#191a23'
+foreground: '#e5e6ef'
+details: darker
+terminal_colors:
+  normal:
+    black: '#343542'
+    red: '#f34e52'
+    green: '#27a644'
+    yellow: '#d8a900'
+    blue: '#2bb7ff'
+    magenta: '#cc9dff'
+    cyan: '#00b8cc'
+    white: '#9d9ea6'
+  bright:
+    black: '#64646c'
+    red: '#ff6666'
+    green: '#43bc58'
+    yellow: '#ffcd00'
+    blue: '#69dbff'
+    magenta: '#fa9ce3'
+    cyan: '#00cfe2'
+    white: '#e5e6ef'

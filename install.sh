@@ -27,9 +27,9 @@ install_zed() {
 install_alacritty() {
   local dir="$HOME/.config/alacritty/themes"
   mkdir -p "$dir"
-  cp "$REPO_DIR"/alacritty/linear-*.toml "$dir/"
+  cp "$REPO_DIR"/terminals/alacritty-*.toml "$dir/"
   echo "alacritty: installed to $dir"
-  echo '  add to alacritty.toml:  [general] import = ["~/.config/alacritty/themes/linear-dark.toml"]'
+  echo '  add to alacritty.toml:  [general] import = ["~/.config/alacritty/themes/alacritty-dark.toml"]'
 }
 
 case "${1:-all}" in
@@ -43,6 +43,7 @@ case "${1:-all}" in
     ;;
   *)
     echo "usage: ./install.sh [all|ghostty|cmux|zed|alacritty]" >&2
+    echo "  (kitty, wezterm, iterm2, warp: copy from terminals/ — see README)" >&2
     exit 1
     ;;
 esac

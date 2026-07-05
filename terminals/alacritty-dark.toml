@@ -1,5 +1,5 @@
 # Linear Dark — Alacritty
-# Import in alacritty.toml: general.import = ["~/.config/alacritty/themes/linear-dark.toml"]
+# general.import = ["~/.config/alacritty/themes/alacritty-dark.toml"]
 
 [colors.primary]
 background = "#191a23"

@@ -1,5 +1,5 @@
 # Linear Light — Alacritty
-# Import in alacritty.toml: general.import = ["~/.config/alacritty/themes/linear-light.toml"]
+# general.import = ["~/.config/alacritty/themes/alacritty-light.toml"]
 
 [colors.primary]
 background = "#ffffff"

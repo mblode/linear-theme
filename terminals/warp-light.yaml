@@ -1,0 +1,24 @@
+name: Linear Light
+accent: '#6d78d5'
+background: '#ffffff'
+foreground: '#303032'
+details: lighter
+terminal_colors:
+  normal:
+    black: '#303032'
+    red: '#e2253b'
+    green: '#008e09'
+    yellow: '#957100'
+    blue: '#007fff'
+    magenta: '#8e54cb'
+    cyan: '#0093ba'
+    white: '#e4e4e4'
+  bright:
+    black: '#5e5e60'
+    red: '#f34e52'
+    green: '#27a644'
+    yellow: '#d8a900'
+    blue: '#2bb7ff'
+    magenta: '#ce55b0'
+    cyan: '#00a2b6'
+    white: '#f9f9f9'

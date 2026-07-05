@@ -21,7 +21,8 @@
         "punctuation.definition.quote.begin.markdown"
       ],
       "settings": {
-        "foreground": "#5e5e60"
+        "foreground": "#5e5e60",
+        "fontStyle": "italic"
       }
     },
     {

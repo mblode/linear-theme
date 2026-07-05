@@ -38,16 +38,19 @@ Select Linear with `cmd-k cmd-t`, or in `settings.json`:
 
 Covers the UI, syntax, and the built-in terminal.
 
-## Alacritty
+## Other terminals
 
-In `alacritty.toml`:
+`terminals/` has the same 16-colour palette in each terminal's native format:
 
-```toml
-[general]
-import = ["~/.config/alacritty/themes/linear-dark.toml"]
-```
+| Terminal | File | Load with |
+| --- | --- | --- |
+| Alacritty | `alacritty-{light,dark}.toml` | `[general] import = ["…/alacritty-dark.toml"]` |
+| Kitty | `kitty-{light,dark}.conf` | `include kitty-dark.conf` |
+| WezTerm | `wezterm-{light,dark}.lua` | `require` it into `color_schemes` |
+| iTerm2 | `iterm2-{light,dark}.itermcolors` | double-click to import, then pick in Settings → Profiles → Colors |
+| Warp | `warp-{light,dark}.yaml` | drop into `~/.warp/themes/` |
 
-The same scheme also works in Kitty, WezTerm, iTerm2, and Warp.
+`./install.sh alacritty` installs the Alacritty files; the rest are copy-in.
 
 ## diffs.com & Shiki
 
