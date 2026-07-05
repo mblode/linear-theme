@@ -4,13 +4,7 @@ Light and dark themes for Ghostty, cmux, Zed, and Alacritty, built from Linear's
 
 ## Preview
 
-**Linear Dark**
-
-![#191a23](https://placehold.co/60x40/191a23/191a23.png) ![#9d9ea6](https://placehold.co/60x40/9d9ea6/9d9ea6.png) ![#fa9ce3](https://placehold.co/60x40/fa9ce3/fa9ce3.png) ![#cc9dff](https://placehold.co/60x40/cc9dff/cc9dff.png) ![#ffe09e](https://placehold.co/60x40/ffe09e/ffe09e.png) ![#7fdede](https://placehold.co/60x40/7fdede/7fdede.png) ![#73d1fa](https://placehold.co/60x40/73d1fa/73d1fa.png) ![#fac08a](https://placehold.co/60x40/fac08a/fac08a.png) ![#8fa7ff](https://placehold.co/60x40/8fa7ff/8fa7ff.png) ![#7e7fff](https://placehold.co/60x40/7e7fff/7e7fff.png) ![#e5e6ef](https://placehold.co/60x40/e5e6ef/e5e6ef.png)
-
-**Linear Light**
-
-![#ffffff](https://placehold.co/60x40/ffffff/ffffff.png) ![#5e5e60](https://placehold.co/60x40/5e5e60/5e5e60.png) ![#ce55b0](https://placehold.co/60x40/ce55b0/ce55b0.png) ![#8e54cb](https://placehold.co/60x40/8e54cb/8e54cb.png) ![#bf830a](https://placehold.co/60x40/bf830a/bf830a.png) ![#248b8b](https://placehold.co/60x40/248b8b/248b8b.png) ![#2797c7](https://placehold.co/60x40/2797c7/2797c7.png) ![#bb610c](https://placehold.co/60x40/bb610c/bb610c.png) ![#687bc4](https://placehold.co/60x40/687bc4/687bc4.png) ![#6d78d5](https://placehold.co/60x40/6d78d5/6d78d5.png) ![#303032](https://placehold.co/60x40/303032/303032.png)
+![Linear theme, dark and light](assets/preview.png)
 
 ## Install
 
